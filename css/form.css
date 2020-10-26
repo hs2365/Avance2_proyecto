@@ -1,0 +1,119 @@
+.cont-form {
+   padding: 2rem;
+   background-color: #fff;
+}
+
+.title-form {
+   text-align: center;
+   font-size: 30px;
+   margin-bottom: 10px;
+}
+
+.cont-datos {
+   widows: 100%;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+
+.form-input, .form-select {
+   width: 30%;
+   padding: 10px;
+   border: 1px solid #2d2dfc;
+   border-radius: 2px;
+}
+
+.textarea {
+   width: 100%;
+   max-width: 100%;
+   min-width: 100%;
+   max-height: 150px;
+   min-height: 100px;
+   border: 1px solid #2d2dfc;
+   border-radius: 2px;
+   margin-bottom: 20px;
+}
+
+.btn-gost {
+   border: 1px solid #2d2dfc;
+   padding: 10px 35px;
+   cursor: pointer;
+   border-radius: 2px;
+   transition: .3s ease-in-out;
+}
+
+.btn-gost:hover {
+   background-color: #2d2dfc;
+   color: #fff;
+}
+
+/* Comentarios */
+.comentarios {
+   width: 100%;
+   padding: 2rem;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.mensajes {
+   width: 48%;
+   border:1px solid #5151fc;
+   border-radius: 5px;
+   color: #3434c9;
+   margin-bottom: 20px;
+   animation: mostrar 1s ease-in-out;
+}
+
+.datos {
+   display: flex;
+   justify-content: flex-start;
+   padding: 10px;
+}
+
+.datos-info {
+   margin: 0 10px;
+}
+
+.textarea-mensaje {
+   width: 100%;
+   min-width: 100%;
+   max-width: 100%;
+   min-height: 100px;
+   max-height: 100px;
+   padding: 10px 5px;
+}
+
+.email {
+   padding: 10px 15px;
+   text-align: right;
+   font-weight: 700;
+   border-bottom: 1px solid #5151fc;
+}
+
+@keyframes mostrar {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+/* Breakpoint */
+@media screen and (max-width:760px) {
+   .cont-datos {
+      flex-wrap: wrap;
+   }
+
+   .form-input,
+   .form-select {
+      width: 100%;
+      margin-bottom: 20px;
+   }
+
+   .mensajes {
+      width: 100%;
+   }
+}
